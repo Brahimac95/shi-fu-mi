@@ -9,7 +9,7 @@ optionImages.forEach((image, index) => {
     image.addEventListener("click", (e) => {
         image.classList.add("active")
 
-        //Pour avoir les même image en debut de manche
+        //Pour avoir les mêmes images en début de manche
         userResult.src = cpuResult.src = "images/rock.png"
         result.textContent = "Patientez..."
 
@@ -32,12 +32,11 @@ optionImages.forEach((image, index) => {
             let cpuImages = ["images/rock.png", "images/paper.png","images/scissors.png"]
             cpuResult.src = cpuImages[randomNumber]
 
-            let userValue = ["R", "P", "S"][index]// on assigne un index au item du joueur
+            let userValue = ["R", "P", "S"][index]// On assigne un index aux items du joueur
 
-            //on assigne un tableu aleatoire au l'ordinateur 
+            //On assigne un tableu aléatoire à l'ordinateur 
             //R: pierre, P: feuille, S: sciseaux
-            let cpuValue = ["R", "P", "S"][randomNumber]// on assigne des chiffre aléatoire à l'adversaire
-
+            let cpuValue = ["R", "P", "S"][randomNumber]// On assigne des chiffre aléatoire à l'adversaire
 
             //Objet du resultat
             let outcomes = {
